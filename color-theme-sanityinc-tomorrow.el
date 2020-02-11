@@ -122,7 +122,7 @@ executed."
                (selection . "#424242")
                (foreground . "#eaeaea")
                (comment . "#969896")
-               ;; (comment . "#0A0A0A")
+               (whitespcolor . "#0A0A0A")
                (red . "#d54e53")
                (orange . "#e78c45")
                (yellow . "#e7c547")
@@ -629,7 +629,8 @@ names to which it refers are bound."
       (whitespace-space-before-tab (:background ,contrast-bg :foreground ,orange))
       (whitespace-tab (:background ,contrast-bg :foreground ,comment))
       (whitespace-trailing (:background ,orange :foreground ,contrast-bg))
-      (trailing-whitespace (:inherit whitespace-trailing))
+      ;; (trailing-whitespace (:inherit whitespace-trailing))
+      (trailing-whitespace (:background ,whitespcolor))
 
       ;; window-divider (built-in)
       (window-divider (:foreground ,comment))
