@@ -46,8 +46,6 @@
 ;; Colour selection by Chris Kempson:
 ;; https://github.com/ChrisKempson/Tomorrow-Theme
 
-;;; Code:
-
 (require 'color)
 
 (eval-when-compile (require 'ansi-color))
@@ -123,7 +121,8 @@ executed."
                (current-line . "#2a2a2a")
                (selection . "#424242")
                (foreground . "#eaeaea")
-               (comment . "#969896")
+               ;; (comment . "#969896")
+               (comment . "#0A0A0A")
                (red . "#d54e53")
                (orange . "#e78c45")
                (yellow . "#e7c547")
